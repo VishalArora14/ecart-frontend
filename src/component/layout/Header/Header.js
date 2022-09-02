@@ -2,6 +2,9 @@ import React from "react";
 import { ReactNavbar } from "overlay-navbar";
 import logo from "../../../images/logo.png";
 
+import "./Header.css";
+import { FaUserAlt, FaShoppingCart, FaSearch } from "react-icons/fa";
+
 const options = {
   burgerColor: "grey",
   burgerColorHover: "#006d77",
@@ -39,6 +42,13 @@ const options = {
   cartIconMargin: "1vmax",
   profileIconMargin: "1vmax",
   searchIconMargin: "1vmax",
+
+  profileIcon: true,
+  searchIcon: true,
+  cartIcon: true,
+  ProfileIconElement: FaUserAlt,
+  CartIconElement: FaShoppingCart,
+  SearchIconElement: FaSearch,
 
   logoTransition: "0.1",
   logoAnimationTime: "0.1",
